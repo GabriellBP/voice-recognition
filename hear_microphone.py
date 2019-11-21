@@ -24,4 +24,9 @@ def hear_microphone():
     return phrase
 
 
-hear_microphone()
+def main():
+    hear_microphone()
+
+
+if __name__ == "__main__":
+    main()
