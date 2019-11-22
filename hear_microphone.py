@@ -15,7 +15,7 @@ def hear_microphone():
         audio = microphone.listen(source)
     try:
         # Tries to recognizes the pattern
-        phrase = microphone.recognize_google(audio, language='pt-BR')
+        phrase = microphone.recognize_google(audio, language='pt-BR')  # Use internet, to work offline use recognize_sphinx
         # Returns the sentence
         print('Did you say "' + phrase + '"?')
     except sr.UnkownValueError:
